@@ -1,6 +1,4 @@
-@charset "UTF-8";
-/* CSS Document created by Paula Castanos, Spring 2019, 03/24/2019 */
-
+/* ---------------- TEXT STYLES ---------------------- */
 body {
 	font-family:"Times New Roman", Times, serif;
 	font-size: 16px;
@@ -98,46 +96,91 @@ iframe {
 	margin: 8px;
 }
 
-/* DIV STYLES FOR PAGE LAYOUT */
 
+/* ---------------- CONTAINER STYLES ----------------- */
+.container {
+  width: 960px;  
+  margin: 0 auto;
+  overflow: hidden;
+}
 
-#container { 
-	width: 1000px; 
-	margin: 0 auto; 
-	background-color: #F9F4E5; 
+/*----------------NAVBAR STYLES-------------------*/
+#navbar{
+	position: fixed; 
+	width: 100%;
+	height: 75px;
 	overflow: hidden;
+	margin-bottom: 0px;
+	 
+}	
+ul#menu {
+	list-style: none; /* eliminates bullets */
+} 
+ul#menu li {
+	float: left; /* changes list from vertical to horizontal */
+	margin-left: -10px; /* controls space between buttons/tabs */
+} 
+ul#menu li a.button {
+	background-color: #A5BE5D; /* button/tab color */
+	color: #360B00; /* font color */
+	font-size:1em;
+	text-decoration: none; /* removes the link underline */
+	/* the padding define the size of the buttons */
+	/* increase bottom padding for tabs with hidden bottoms so tab text can be seen*/
+	padding: 10px 45px 30px 40px; 	
+	/* rounded corners turn buttons into tabs when bottom of button is hidden */
+	border-radius: 0px; 
+	border: solid 1px; /* 1-pixel border around buttons. */
 }
-#header { 
-	width: 100%; 
-	background-color: #FFFDDA;
-	border-bottom: 2px solid #360B00;
+/* styles for the currently selected page should be different to make it stand out */
+/* also you want to discourage users from clicking the button for the current page */
+ul#menu li a.button.selected{
+	background-color: #F9F4E5; /* matching the color of the content background color */
+	color: #360B00; /* font color */
+	font-style: normal;
 }
-#content { 
-	width: 600px;
-	float: left; 
-	padding-bottom: 40px;
+/* visited link font colors */
+ul#menu li a.button:visited {
+	color: #700000;
+}  
+ul#menu li a.button:visited.selected{
+	color: #360B00;
+} 
+/* hover link styles */
+ul#menu li a.button:hover {
+	background-color: #FF801D;
+	color: #360B00;
+} 
+/* selected button shouldn't change on hover */ 
+ul#menu li a.button:hover.selected{ 
+	background-color: #FF801D;
+	color: #360B00;
+} 
+/*----------------SECTION STYLES--------------------*/
+body {
+    margin:0;
+    padding: 0;
 }
-#sidebar { 
-	width: 250px; 
-	float: right;
-	margin-top: 100px;
-	margin-right: 100px;
-	background: #ffffff;
-	border: 4px solid #A5BE5D;
-	border-radius: 6px;
-	box-shadow: 10px 10px 5px #888888;
+#splash{
+    background:url(images/milk.jpg) no-repeat center top fixed;
+    background-size: cover;
+    height: 1100px;
+   
 }
-#sidebar p{
-	padding: 0;
-	float: left;
+#overview{
+    background-color:#F9F4E5;
+    height:1900px;
 }
-#footer { 
-	clear: both;
-	width: 100%; 
-	background-color: #FFFDDA;
-	border-top: 2px solid #360B00;
+#media{
+    background-color:#FF801D;
+    height:775px;
 }
-#footer p {
-	margin: 0;
-	padding: 30px;
+#discography{
+    background-color:#B8431E;
+    height:1000px;
+}
+#footer{
+	background:url(images/berry.jpg) no-repeat center top fixed;
+	background-size:  cover;
+    height: 300px;
 }
