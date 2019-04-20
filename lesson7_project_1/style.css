@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* CSS Document created by Paula Castanos, Spring 2019, 03/24/2019 */
+
+body {
+	font-family:"Times New Roman", Times, serif;
+	font-size: 16px;
+	line-height: 1.6em;
+	color: #360B00;
+	background-color: #FFFDDA;
+	padding: 0 40px;
+}
+
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.1em;
+	color: #360B00;
+}
+h1 {
+	font-size: 32px;
+	padding: 4px;
+	font-variant: normal;
+	letter-spacing: 0.1em;
+	line-height: 2em;
+}
+h2 {
+	font-size: 28px;
+	padding: 4px;
+	font-variant: normal;
+	letter-spacing: 0.1em;
+	background-color: #A5BE5D;
+	border: solid #360B00 3px;
+
+}
+h3 {
+	font-size: 22px;
+	letter-spacing: 0.1em;
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: #9B9744;
+	padding: 4px;
+	font-variant: normal;
+	font-style: italic;
+}
+
+/* link styles ---------------------------- */
+a:link {
+	font-weight: bold;
+	color: #700000;
+	text-decoration: none;
+}
+a:visited {
+	font-weight: bold;
+	color: #B8431E;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF801D;
+}
+
+/* list styles ----------------------------- */
+ul li {
+	list-style-image: url(images/star.png);
+	margin-left: 12px;
+}
+ol {
+	margin-left: 14px;
+}
+
+/* table styles -------------------------------------- */
+table {
+	border: solid #360B00 1px;
+}
+td {
+	padding: 6px;
+	border: solid #360B00 2px;
+}
+th {
+	font-weight: bold;
+	background-color: #360B00;
+	text-align: center;
+	padding: 6px;
+	border: solid #360B00 1px;
+}
+
+/* border styles ------------------------------------ */
+hr {
+	border: solid #360B00 1px;
+}
+
+img {
+	border: solid #360B00 1px;
+
+}
+
+iframe {
+	border: solid #360B00 1px;
+	padding: 8px;
+	margin: 8px;
+}
+
+/* DIV STYLES FOR PAGE LAYOUT */
+
+
+#container { 
+	width: 1000px; 
+	margin: 0 auto; 
+	background-color: #F9F4E5; 
+	overflow: hidden;
+}
+#header { 
+	width: 100%; 
+	background-color: #FFFDDA;
+	border-bottom: 2px solid #360B00;
+}
+#content { 
+	width: 600px;
+	float: left; 
+	padding-bottom: 40px;
+}
+#sidebar { 
+	width: 250px; 
+	float: right;
+	margin-top: 100px;
+	margin-right: 100px;
+	background: #ffffff;
+	border: 4px solid #A5BE5D;
+	border-radius: 6px;
+	box-shadow: 10px 10px 5px #888888;
+}
+#sidebar p{
+	padding: 0;
+	float: left;
+}
+#footer { 
+	clear: both;
+	width: 100%; 
+	background-color: #FFFDDA;
+	border-top: 2px solid #360B00;
+}
+#footer p {
+	margin: 0;
+	padding: 30px;
+}
